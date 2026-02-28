@@ -133,15 +133,16 @@
         transition: all 0.4s ease;
         height: 50vh;
         z-index: -1;
+        background: #1657a1;
     }
 
-    .navbar_menu:active {
-        background-color: #1657a1;
+    .navbar_menu.active {
+        background: #1657a1;
         top: 100%;
         opacity: 1;
         transition: all 0.4s ease;
         z-index: 99;
-        height: 50vh;
+        height: 60vh;
         font-size: 1.6rem;
     }
 
@@ -174,6 +175,45 @@
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
+    }
+
+    .navbar_btn {
+        padding: 2rem;
+    }
+
+    .button_Login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;   
+    }
+
+    .button_SignUp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    .navbar_toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
 
