@@ -28,7 +28,7 @@
     padding: 0 50px;
 }
 
-#navbar_logo {
+#navbar_logo, #logo-container {
     background-color: #1657a1;
     background-image: linear-gradient(to top, #2781e8 0%, #b6d2f2 100%);
     background-size: 100%;
@@ -217,7 +217,61 @@
     }
 }
 
+.login_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
+#login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FCFCFF;
+    border: 1px solid #888888;
+    width: 450px;
+    height: 550px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 5px;
+}
 
+.login_input {
+    border-radius: 20px;
+    border: 1px solid #888888;
+    width: 100%;
+    padding: 10px;
+}
 
+input[type=text], input[type=password] {
+    color: #000000;
+    background-color: transparent;
+    transition: border-color .2s linear;
+}
+
+input::placeholder {
+    color: #888888;
+}
+
+input[type=text]:focus, input[type=text]:hover,
+input[type=password]:focus, input[type=password]:hover {
+    outline: none;
+    border-color: #000000;
+    transition: border-color .2s linear;
+}
+
+#login_button {
+    color: #000000;
+    transition: background-color .2s linear, color .2s linear;
+}
+
+#login_button:hover {
+    cursor: pointer;
+    background-color: #888888;
+    color: white;
+    transition: background-color .2s linear, color .2s linear;
+}
 
