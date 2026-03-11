@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">1
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +16,29 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="navbar_menu">
+            <ul class="navbar_menu">    
                 <li class="navbar_item">
                     <a href="./index.html" class="navbar_links">Home</a>
             </ul>
         </div>
     </nav>
+    <div class="loginsignup_form">
+        <form id="signup" action="#" method="post">
+            <div id="login-container">
+                <h1 id="logo-container">reVision</h1>
+                <h2>Login</h2>
+
+                <input class="login_input" id="userName" type="text" placeholder="Username" name="username">
+                <input class="login_input" id="email" type="text" placeholder="Email" name="email">
+                <input class="login_input" id="passWord" type="password" placeholder="Password" name="password">
+                <input class="login_input" id="rePassword" type="password" placeholder="Enter password again" name="repassword">
+
+                <button class="login_input" id="signup_button" type="submit">Sign Up</button>
+
+                <p>Already have an account? <a href="./login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

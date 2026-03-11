@@ -217,7 +217,7 @@
     }
 }
 
-.login_form {
+.loginsignup_form {
     display: flex;
     flex-direction: column;
     justify-content: center;
