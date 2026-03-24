@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>reVision - Home Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.min.js" defer></script>
+        <script src="./searchscriptCareers.js" defer></script>
+    </head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="./index.html" id="navbar_logo">reVision</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="./index.html" class="navbar_links">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="./resources.html" class="navbar_links">Resources</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="./careers.html" class="navbar_links">Careers</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="./signup.html" class="button_SignUp">Sign Up</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="./login.html" class="button_Login">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="search_container">
+        <form class="search_form">
+            <input type="search" placeholder="Enter Keyword" id="searchField">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="user_cards1">
+    </div>
+    <template data-template>
+        <div class="card1">
+            <div class="card_header1"></div>
+            <div class="card_body1"></div>
+        </div>
+    </template>
+    <script src="app.js"></script>
+</body>
+</html>

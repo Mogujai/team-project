@@ -410,3 +410,72 @@ input[type=password]:focus, input[type=password]:hover {
     margin-top: 5px;
 
 }
+
+.search_container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    padding: 50px;
+}
+
+.search_form {
+    width: 600px;
+    height: 55px;
+    display: flex;
+}
+
+.search_form input{
+    flex: 1;
+}
+
+.search_form button{
+    padding: 10px 50px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.user_cards1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1400px, 1fr));  
+    gap: 1.5rem;                                                 
+    padding: 2rem 1rem;                                           
+    max-width: 1400px;                                            
+    margin: 0 auto;                                               
+    width: 100%;                                                  
+}
+
+.card1 {
+    background-color: #ffffff;
+    border: 1px solid #ddd;                                       
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);                 
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+    min-height: 140px;                                            
+}
+
+.card1:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card_header1 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #222;
+}
+
+.card_body1 {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+    white-space: pre-wrap;   
+    word-break: break-word;
+}
+
+.hide {
+    display: none;
+}
