@@ -30,17 +30,18 @@ def createTables():
                     FOREIGN KEY(subjectFID) REFERENCES subjectList(subjectID)
                 )
             """)
+#    cursor.execute("""1
+#                DELETE FROM resources
+#                WHERE resourceID = 29;
+#                """)
+    conn.commit()
     enterInfo()
-#cursor.execute("""
-#                DELETE FROM careers
-#                WHERE careersID = 1;
-#        """)
 
 #cursor.execute("""
 #               ALTER TABLE careers
 #               ADD careersName TEXT NOT NULL;
 #               """)
-conn.commit()
+
 
 def enterInfo():
     print("What would you like to do? \n\
